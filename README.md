@@ -1,4 +1,4 @@
-# Twingate + GitHub CodeSpaces
+# Twingate + GitHub Codespaces
 Example of Github Codespaces with Twingate
 
 ## What this is
@@ -12,7 +12,7 @@ _Note_: For connecting your GitHub workflows to private resources please also se
 ## Getting started
 
 ### Prerequisites
-1. Ensure you have a GitHub repository that you'd like to open with CodeSpaces and ensure you have permissions to launch CodeSpaces.  You may need assistance from your organization's GitHub Administrator.
+1. Ensure you have a GitHub repository that you'd like to open with Codespaces and ensure you have permissions to launch Codespaces.  You may need assistance from your organization's GitHub Administrator.
 2. Ensure that there exists a `.devcontainer` directory in your repository
 3. Copy the `Dockerfile` from `.devcontainer` in this repository to the same location in your repository.
 
