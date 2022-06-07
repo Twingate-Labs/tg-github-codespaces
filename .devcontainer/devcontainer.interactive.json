@@ -1,0 +1,7 @@
+{
+    "name": "Twingate-compatible Codespaces example (console-based authentication)",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "runArgs": [ "--cap-add=NET_ADMIN", "--device=/dev/net/tun" ],
+    "postStartCommand": "sudo -E -- bash -c 'sed ''s/resolvconf//g'' /etc/resolv.conf | tee /etc/resolv.conf >/dev/null; /etc/init.d/dbus start'"
+}
