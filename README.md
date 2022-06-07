@@ -4,8 +4,10 @@ Example of Github Codespaces with Twingate
 ## What this is
 [GitHub Codespaces](https://github.com/features/codespaces) is a service from GitHub that provides a way for developers to run a full development environment entirely within the cloud and accessible via a web-browser or via [VisualStudio Code](https://code.visualstudio.com).
 
-This repository provides an example of how to configure a Twingate client running with either a [Service Account](https://docs.twingate.com/docs/services) (default) or as a regular user.
+This repository provides an example of how to configure a [Twingate](https://twingate.com) client running with either a [Service Account](https://docs.twingate.com/docs/services) (default) or as a regular user.
 Codespaces users will then be able to access private resources such as internal databases or APIs that are protected behind Twingate directly from their web-browser or from within VS Code.
+
+_Note_: For connecting your GitHub workflows to private resources please also see the [Connect to Twingate](https://github.com/marketplace/actions/connect-to-twingate) GitHub Action.
 
 ## Getting started
 
