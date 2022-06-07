@@ -21,7 +21,7 @@ _Note_: For connecting your GitHub workflows to private resources please also se
 2. Copy the file `devcontainer.serviceaccount.json` to the `.devcontainer` directory in your respository and rename it to `devcontainer.json`.
 3. Create a Codespaces [User Secret](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces#adding-a-secret) named `TWINGATE_SERVICE_KEY`
 4. Start your Codespaces instance and confirm that Twingate is connected by running `twingate status` - it should return `online`
-   1. You can run `twingate resources` to obtain a list of resource
+   1. Run `twingate resources` to obtain a list of resources
    2. In case of problems please run `sudo twingate report` and send the report file to support@twingate.com
 
 #### Connect using a regular Twingate account (interactive login)
@@ -30,7 +30,7 @@ _Note_: For connecting your GitHub workflows to private resources please also se
 3. Once your Twingate account is configured you can begin login using `twingate start`  (**note**: be sure to execute this _without_ `sudo`)
 4. Run `/usr/bin/twingate-notifier console` (**note**: be sure to execute this _without_ `sudo`)
    1. You should follow the URL displayed and authenticate through your web-browser
-   2. You can run `twingate resources` to obtain a list of resource
+   2. Run `twingate resources` to obtain a list of resources
    3. In case of problems please run `sudo twingate report` and send the report file to support@twingate.com
 
 ## Feedback, improvements, comments
