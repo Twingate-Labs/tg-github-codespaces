@@ -26,10 +26,10 @@ _Note_: For connecting your GitHub workflows to private resources please also se
 
 #### Connect using a regular Twingate account (interactive login)
 1. Copy the file `devcontainer.interactive.json` to the `.devcontainer` directory in your respository and rename it to `devcontainer.json`.
-3. Create a Codespaces [Secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces) named `TWINGATE_ACCOUNT` set to your Twingate Account Name. For example, if your Twingate account is `acme.twingate.com` then set the value to `acme`.
+3. Create a Codespaces [Secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces) named `TWINGATE_ACCOUNT` set to your Twingate Account Name. For example, if your Twingate domain is `acme.twingate.com` then set the value to `acme`.
 3. Run `twingate status`  (**note**: be sure to execute these commands _without_ `sudo`)
    1. If status is `authenticating` you should follow the URL displayed to authenticate
-   2. If status is `not running` then execute `twingate start` and then `/usr/bin/twingate-notifier console` and follow the URL displayed to authenticate
+   2. If status is `not running` then you should execute `twingate start` followed by `/usr/bin/twingate-notifier console` and follow the URL displayed to authenticate
    3. Once `online`, run `twingate resources` to obtain a list of resources
    4. In case of problems please run `sudo twingate report` and send the report file to support@twingate.com.
 
